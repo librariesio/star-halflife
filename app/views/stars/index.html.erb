@@ -1,0 +1,7 @@
+<ul>
+  <% @repos.each do |repo| %>
+    <li>
+      <%= link_to repo, star_path(*repo.split('/')) %>
+    </li>
+  <% end %>
+</ul>

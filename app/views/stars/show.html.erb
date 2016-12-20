@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1>
+      <%= params[:owner] %>/<%= params[:name] %> stars
+    </h1>
+
+    <%= line_chart [{name: "Cumulative #{number_with_delimiter(@result.values.last)}", data: @result}, {name: "Decaying #{number_with_delimiter(@decayed_result.values.last.round)}", data: @decayed_result}] %>
+    <%= line_chart [{name: 'Monthly Rate', data: @stars.group_by_month(:starred_at).count}], colors: ["green"] %>
+  </div>
+</div>
