@@ -12,7 +12,7 @@ I wanted to visualize the change and rate of change in star counts for projects 
 
 The project is like a little baby. You have to host it yourself and it requires command line usage to download stars for a project.
 
-Check out the open issues for a glimpse of the future: https://github.com/librariesio/star-halflife/issue.
+Check out the open issues for a glimpse of the future: https://github.com/librariesio/star-halflife/issues.
 
 ## Development
 
